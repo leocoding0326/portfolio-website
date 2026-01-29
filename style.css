@@ -1,0 +1,31 @@
+/* Font Links */
+
+/* Universal Styles */
+ * {
+    box-sizing: border-box;
+    margin: 0;
+ }
+/* Main Sections Style */
+
+#left-menu {
+    max-width: 20%;
+    border-right: 1px solid darkgray;
+}
+
+#right {
+    max-width: 80%;
+}
+
+/* Header Styles */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+header img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 100%;
+}
