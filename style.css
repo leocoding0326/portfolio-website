@@ -39,7 +39,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 100px;
     position: fixed;
     top: 0px;
 }
@@ -89,11 +89,15 @@ header h2 {
     font-family: "HeadersFont", sans-serif;
 }
 
+header h2 {
+    color: rgb(142, 140, 140);
+}
+
 .header-container{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 2rem;
+    padding: 0 3rem;
     align-items: center;
 }
 
@@ -107,6 +111,10 @@ header img {
 }
 
 .header-left,
-header nav ul{
+header nav ul,
+header nav {
     display: flex;
+    gap: 1rem;
+    align-items: center;
 }
+
