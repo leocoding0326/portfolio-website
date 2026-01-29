@@ -114,6 +114,7 @@ header img {
     margin: auto 0;
     position: relative;
     left: 9px;
+    animation: raiseIn .35s ease-in;
 }
 
 .header-left,
@@ -122,5 +123,11 @@ header nav {
     display: flex;
     gap: 1rem;
     align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    gap: 2rem;
+    margin-right: 2rem;
 }
 
