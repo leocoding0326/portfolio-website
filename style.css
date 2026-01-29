@@ -1,3 +1,12 @@
+/* Fonts */
+
+@font-face {
+    font-family: "HeadersFont";
+    src:url(/media/fonts/Google_Sans_Code/GoogleSansCode-Italic-VariableFont_wght.ttf) format(ttf),
+        url(/media/fonts/Google_Sans_Code/transfonter.org-20260129-221604/GoogleSansCode-Regular.woff) format(woff),
+        url(/media/fonts/Google_Sans_Code/transfonter.org-20260129-221604/GoogleSansCode-Regular.woff2) format(woff2);
+}
+
 /*Animations*/
 
 @keyframes raiseIn {
@@ -23,7 +32,7 @@
 /*Menu Bar Styles*/
 
 #menu-bar {
-    min-width: 50px;
+    min-width: 60px;
     min-height: 100vh;
     border-right: 1px solid darkgray;
     display: flex;
@@ -70,8 +79,14 @@ header {
     display: flex;
     height: 60px;
     border-bottom: 1px solid darkgray;
-    position: absolute;
+    position: fixed;
+    top: 0;
     width: 100%;
+}
+
+header h1,
+header h2 {
+    font-family: "HeadersFont", sans-serif;
 }
 
 .header-container{
@@ -88,7 +103,7 @@ header img {
     width: auto;
     margin: auto 0;
     position: relative;
-    left: 4px;
+    left: 9px;
 }
 
 .header-left,
