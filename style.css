@@ -7,16 +7,33 @@
  }
 /* Main Sections Style */
 
+
+/*Menu Bar Styles*/
+
 #menu-bar {
-    max-width: 100px;
-    min-height: 100%;
+    max-width: 50px;
+    min-height: 100vh;
     border-right: 1px solid darkgray;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0
 }
 
-#right {
-    max-width: 80%;
+#menu-bar i {
+    font-size: 1.3rem;
+}
+.menu-bar-top,
+.menu-bar-bot{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.menu-bar-divider{
+    background-color: darkgrey;
+    height: 2px;
+    min-width: 80%;
 }
 
 /* Header Styles */
