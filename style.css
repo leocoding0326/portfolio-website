@@ -21,15 +21,21 @@
     padding: 2rem 0
 }
 
-#menu-bar i {
-    font-size: 1.3rem;
+#menu-bar a {
+    color: black;
 }
+
+#menu-bar i {
+    font-size: 1.5rem;
+}
+
 .menu-bar-top,
 .menu-bar-bot{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
 }
+
 .menu-bar-divider{
     background-color: darkgrey;
     height: 2px;
