@@ -7,9 +7,12 @@
  }
 /* Main Sections Style */
 
-#left-menu {
-    max-width: 20%;
+#menu-bar {
+    max-width: 100px;
+    min-height: 100%;
     border-right: 1px solid darkgray;
+    display: flex;
+    flex-direction: column;
 }
 
 #right {
