@@ -2,9 +2,9 @@
 
 @font-face {
     font-family: "HeadersFont";
-    src:url(/media/fonts/Google_Sans_Code/GoogleSansCode-Italic-VariableFont_wght.ttf) format(ttf),
-        url(/media/fonts/Google_Sans_Code/transfonter.org-20260129-221604/GoogleSansCode-Regular.woff) format(woff),
-        url(/media/fonts/Google_Sans_Code/transfonter.org-20260129-221604/GoogleSansCode-Regular.woff2) format(woff2);
+    src:url(/media/fonts/Google_Sans_Code/transfonter.org-20260129-221604/GoogleSansCode-Regular.woff2) format("woff2"),
+        url(/media/fonts/Google_Sans_Code/transfonter.org-20260129-221604/GoogleSansCode-Regular.woff) format("woff"),
+        url(/media/fonts/Google_Sans_Code/GoogleSansCode-Italic-VariableFont_wght.ttf) format("ttf");
 }
 
 /*Animations*/
@@ -26,34 +26,69 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    letter-spacing: 1px;
  }
+
+ a {
+     color: black;
+     transition: color 0.2s ease, 
+                 transform 0.4s ease;
+     animation: raiseIn .35s ease-in;
+     text-decoration: none;
+     font-weight: 550;
+ }
+
+ a:hover{
+    color: blue;
+ }
+
+ button {
+    padding: 0.6rem;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    transition: background-color 0.2s ease 0.2s, 
+                transform 0.4s ease;
+    animation: raiseIn .35s ease-in;
+ }
+
+ button:hover{
+    transform: scale(1.1);
+ }
+
+ .primary-button {
+    background-color: rgb(0, 76, 255);
+    color: white;
+ }
+
+  .primary-button:hover {
+    background-color: rgb(0, 106, 255);
+ }
+
 
 
 /*Menu Bar Styles*/
 
 #menu-bar {
     min-width: 60px;
-    min-height: 100vh;
+    min-height: calc(100vh - 60px);
     border-right: 1px solid darkgray;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-top: 100px;
+    padding: 2rem 0;
     position: fixed;
-    top: 0px;
+    top: 60px;
+
 }
 
 #menu-bar a {
-    color: black;
-    transition: color 0.3s ease 0.2s, transform 0.4s ease;
-    animation: raiseIn .35s ease-in;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 #menu-bar a:hover{
-    color: blue;
-    transform: translate(2px);
+    transform: translateX(2px);
 }
 
 #menu-bar i {
@@ -115,6 +150,7 @@ header img {
     position: relative;
     left: 9px;
     animation: raiseIn .35s ease-in;
+    z-index: 10;
 }
 
 .header-left,
@@ -130,4 +166,15 @@ header nav ul {
     gap: 2rem;
     margin-right: 2rem;
 }
+
+header nav a {
+    display: inline-block;
+    font-size: 1.2rem;
+    transform: translateY(0px);
+}
+header nav a:hover {
+    transform: translateY(-2px);
+}
+
+
 
