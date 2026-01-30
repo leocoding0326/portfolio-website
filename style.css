@@ -71,15 +71,15 @@
 
 #menu-bar {
     min-width: 60px;
-    min-height: calc(100vh - 60px);
-    border-right: 1px solid darkgray;
+    min-height: calc(100vh - 80px);
+    border-right: 1px solid lightgray;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
     position: fixed;
-    top: 60px;
+    top: 80px;
 
 }
 
@@ -112,8 +112,8 @@
 
 header {
     display: flex;
-    height: 60px;
-    border-bottom: 1px solid darkgray;
+    height: 80px;
+    border-bottom: 1px solid lightgray;
     position: fixed;
     top: 0;
     width: 100%;
