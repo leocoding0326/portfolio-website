@@ -171,7 +171,7 @@
 
     #menu-bar {
         width: 80vw;
-        /*transform: translateX(-100%);*/
+        transform: translateX(-100%);
         padding: 3rem;
         transition: transform 0.2s ease-out;
     }
@@ -184,8 +184,13 @@
     }
 
     .menu-open {
+        transform: translateX(0);  /* This code open the menu */
+    }
+
+      body.menu-open #menu-bar {
         transform: translateX(100%);  /* This code open the menu */
     }
+
     body.menu-open #overlay {
     opacity: 1;
     pointer-events: auto;
@@ -197,6 +202,8 @@
      body.menu-open .icon-close {
         display: inline-block;
     }
+
+  
 }    
 
 /* Header Styles */
@@ -217,7 +224,7 @@ header h2 {
 }
 
 header h1 {
-    font-size: clamp(1.1rem, 4vw, 3rem);
+    font-size: clamp(1.1rem, 4vw, 2rem);
 }
 
 header h2 {
