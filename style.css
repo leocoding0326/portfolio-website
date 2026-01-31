@@ -138,7 +138,9 @@
 
     #menu-bar {
         width: 80vw;
+        transform: translateX(-100%);
         padding: 3rem;
+        transition: transform 0.2s ease-out;
     }
     .menu-bar-bot {
         flex-direction: row;
@@ -149,7 +151,7 @@
     }
 
     .menu-open {
-        transform: translateX(100%); 
+        transform: translateX(100%);  /* This code open the menu */
     }
 }    
 
