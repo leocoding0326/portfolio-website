@@ -135,6 +135,15 @@
     clip: auto;
     white-space: normal;
     }
+
+    #menu-bar {
+        width: 80vw;
+        /*transform: translateX(-100%);*/
+    }
+
+    .menu-bar-bot {
+        flex-direction: row;
+    }
 }
 
 /* Header Styles */
