@@ -80,7 +80,7 @@
     padding: 2rem 0;
     position: fixed;
     top: 80px;
-
+    z-index: 10;
 }
 
 #menu-bar a {
@@ -111,8 +111,6 @@
     min-width: 80%;
 }
 
-
-
 .hide-label {
     position: absolute;  /* This code hides the labels from desktop screens */
     width: 1px;
@@ -121,6 +119,18 @@
     padding: 0;
     overflow: hidden;
     border: 0;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;                    /* This hides the overlay for the menu drawer */
+    right: 0;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 5;
+    background-color: (0,0,0,0.45)
 }
 
 
@@ -153,6 +163,10 @@
     .menu-open {
         transform: translateX(100%);  /* This code open the menu */
     }
+    body.menu-open #overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }    
 
 /* Header Styles */
@@ -164,6 +178,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 
 header h1,
