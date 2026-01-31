@@ -102,7 +102,7 @@
 .menu-bar-bot{
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 4rem;
 }
 
 .menu-bar-divider{
@@ -138,13 +138,20 @@
 
     #menu-bar {
         width: 80vw;
-        /*transform: translateX(-100%);*/
+        padding: 3rem;
     }
-
     .menu-bar-bot {
         flex-direction: row;
+        gap: 2rem;
     }
-}
+    .menu-bar-divider {
+        display: none;
+    }
+
+    .menu-open {
+        transform: translateX(100%); 
+    }
+}    
 
 /* Header Styles */
 
