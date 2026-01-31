@@ -65,7 +65,15 @@
     background-color: rgb(0, 106, 255);
  }
 
-
+.hide-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;        /* This code hides the labels from desktop screens */
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
 
 /*Menu Bar Styles*/
 
