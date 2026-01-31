@@ -111,7 +111,8 @@
     min-width: 80%;
 }
 
-.hide-label {
+.hide-label,
+.menu-button {
     position: absolute;  /* This code hides the labels from desktop screens */
     width: 1px;
     height: 1px;       
@@ -136,19 +137,23 @@
 
 @media (max-width: 768px) {
     
-    .hide-label {
+    .hide-label,
+    .menu-button {
     position: static;
     width: auto;
     height: auto;
     margin: 0;          /* This code shows the labels in tablets and mobiles */
     overflow: visible;
-    clip: auto;
     white-space: normal;
+    }
+
+    .menu-button {
+        padding: 0.6rem;
     }
 
     #menu-bar {
         width: 80vw;
-        transform: translateX(-100%);
+        /*transform: translateX(-100%);*/
         padding: 3rem;
         transition: transform 0.2s ease-out;
     }
