@@ -112,7 +112,8 @@
 }
 
 .hide-label,
-.menu-button {
+.menu-button, 
+.burger-btn {
     position: absolute;  /* This code hides the labels from desktop screens */
     width: 1px;
     height: 1px;       
@@ -134,18 +135,22 @@
     background-color: (0,0,0,0.45)
 }
 
+
 .burger-btn .icon-close {
     display: none;
 }
 
 .burger-btn i {
   transition: opacity 0.15s ease, transform 0.15s ease;
+  font-size: 2rem;
+  background-color: white;
 }
 
 @media (max-width: 768px) {
     
     .hide-label,
-    .menu-button {
+    .menu-button,
+    .burger-btn {
     position: static;
     width: auto;
     height: auto;
