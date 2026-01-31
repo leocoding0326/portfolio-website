@@ -134,7 +134,7 @@
   background-color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
     .header-nav,
     .name-separator{
@@ -161,6 +161,7 @@
         transform: translateX(-100%);
         padding: 3rem;
         transition: transform 0.2s ease-out;
+        left: 0;
     }
     .menu-bar-bot {
         flex-direction: row;
@@ -258,7 +259,7 @@ header nav a:hover {
     transform: translateY(-2px);
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1310px) {
     .header-left {
         display: flex;
         flex-direction: column;
@@ -267,9 +268,6 @@ header nav a:hover {
         align-items: start;
     }
     .name-separator {
-        display: none;
-    }
-    header nav li{
         display: none;
     }
     
