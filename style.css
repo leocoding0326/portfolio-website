@@ -7,6 +7,7 @@
         url(/media/fonts/Google_Sans_Code/GoogleSansCode-Italic-VariableFont_wght.ttf) format("ttf");
 }
 
+
 /*Animations*/
 
 @keyframes raiseIn {
@@ -65,15 +66,6 @@
     background-color: rgb(0, 106, 255);
  }
 
-.hide-label {
-    position: absolute;
-    width: 1px;
-    height: 1px;        /* This code hides the labels from desktop screens */
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-}
 
 /*Menu Bar Styles*/
 
@@ -93,6 +85,9 @@
 
 #menu-bar a {
     transform: translateX(0);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 #menu-bar a:hover{
@@ -114,6 +109,32 @@
     background-color: darkgrey;
     height: 2px;
     min-width: 80%;
+}
+
+
+
+.hide-label {
+    position: absolute;  /* This code hides the labels from desktop screens */
+    width: 1px;
+    height: 1px;       
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+
+@media (max-width: 768px) {
+    
+    .hide-label {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;          /* This code shows the labels in tablets and mobiles */
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    }
 }
 
 /* Header Styles */
