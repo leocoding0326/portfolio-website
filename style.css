@@ -142,11 +142,17 @@
 
 .burger-btn i {
   transition: opacity 0.15s ease, transform 0.15s ease;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);;
   background-color: white;
 }
 
 @media (max-width: 768px) {
+
+    header h2,
+    .header-nav,
+    .name-separator{
+        display: none;
+    }
     
     .hide-label,
     .menu-button,
@@ -210,6 +216,10 @@ header h2 {
     font-family: "HeadersFont", sans-serif;
 }
 
+header h1 {
+    font-size: clamp(1.1rem, 4vw, 3rem);
+}
+
 header h2 {
     color: rgb(142, 140, 140);
 }
@@ -224,7 +234,7 @@ header h2 {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 3rem;
+    padding: 0 2rem;
     align-items: center;
 }
 
