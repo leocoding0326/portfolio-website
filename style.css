@@ -4,7 +4,7 @@
     font-family: "HeadersFont";
     src:url(/media/fonts/Google_Sans_Code/transfonter.org-20260129-221604/GoogleSansCode-Regular.woff2) format("woff2"),
         url(/media/fonts/Google_Sans_Code/transfonter.org-20260129-221604/GoogleSansCode-Regular.woff) format("woff"),
-        url(/media/fonts/Google_Sans_Code/GoogleSansCode-Italic-VariableFont_wght.ttf) format("ttf");
+        url(/media/fonts/Google_Sans_Code/GoogleSansCode-Italic-VariableFont_wght.ttf) format("truetype");
 }
 
 
@@ -136,7 +136,6 @@
 
 @media (max-width: 768px) {
 
-    header h2,
     .header-nav,
     .name-separator{
         display: none;
@@ -170,19 +169,10 @@
     .menu-bar-divider {
         display: none;
     }
-
-    .menu-open {
-                          /* This code open the menu */
-    }
-
       body.menu-open #menu-bar {
         transform: translateX(0);  /* This code open the menu */
     }
 
-    body.menu-open #overlay {
-    opacity: 1;
-    pointer-events: auto;
-    }
     body.menu-open .icon-open {
         display: none;
     }
@@ -217,7 +207,7 @@ header h1 {
 
 header h2 {
     color: rgb(142, 140, 140);
-    font-size: clamp(.8rem, 2vw, 1.5rem);
+    font-size: clamp(.5rem, 2vw, 1.5rem);
 }
 
 .name-separator {
@@ -267,6 +257,24 @@ header nav a {
 header nav a:hover {
     transform: translateY(-2px);
 }
+
+@media (max-width: 1280px) {
+    .header-left {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: start;
+    }
+    .name-separator {
+        display: none;
+    }
+    header nav li{
+        display: none;
+    }
+    
+}
+
 
 
 
