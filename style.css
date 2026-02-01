@@ -38,6 +38,7 @@
     padding: 0;
     letter-spacing: 1px;
     font-family: "HeadersFont", sans-serif;
+    text-align: center;
 
  }
 
@@ -153,7 +154,7 @@
   background-color: white;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1020px) {
 
     .header-nav,
     .name-separator{
@@ -332,13 +333,24 @@ header nav a:hover {
     justify-content: center;
     align-items: center;
     margin: 120px auto auto;
-    gap: 2rem;
+    gap: 1rem;
+}
+
+#hero-section h2 {
+    font-size: clamp(1.2rem, 4vw, 3rem);
 }
 
 .hero-bullets {
     display: flex;
     list-style: none;
-    gap: 1rem;
+    font-size: clamp(.5rem, 2vw, 1.5rem);
+}
+
+.hero-bullets li:not(:last-child)::after{
+    content: '•';
+    margin: 0 10px;
+    font-size: 1.2em;
+    line-height: 1;
 }
 
 
