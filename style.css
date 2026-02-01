@@ -282,6 +282,10 @@ header img {
     z-index: 10;
 }
 
+header img:hover {
+    cursor: pointer;
+}
+
 .header-left,
 header nav ul,
 header nav {
