@@ -241,6 +241,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 10;
+    background-color: white;
 }
 
 header h1,
@@ -326,6 +327,18 @@ header nav a:hover {
 /* Hero Section */
 
 
+
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.hero-bullets {
+    display: flex;
+}
 
 
 
