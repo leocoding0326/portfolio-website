@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Style Links-->
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome Link-->
+    <script src="https://kit.fontawesome.com/e72dd819d6.js" crossorigin="anonymous"></script>
+
+    <title>About Portfolio Website</title>
+</head>
+
+<body>
+    <!--Header Section-->
+    <header>
+        <img src="/media/pictures/headshot.png" alt="A headshot of Leonel Gonzalez wearing a blue shirt and smiling" class="zoomable">
+        <div class="header-container">
+            <div class="header-left">
+                <h1>Leonel Gonzalez</h1>
+                <div class="name-separator"></div>
+                <h2>Junior Front-End Developer</h2>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="./projects.html" aria-label="Projects" class="nav-link">Projects</a></li>
+                    <li><a href="./about.html" aria-label="about" class="nav-link">About</a></li>
+                    <li><a href="mailto:leocoding0326@icloud.com" class="nav-link">Contact</a></li>
+                </ul>
+                <a class="primary-button button">Download Resume</a>
+            </nav>
+            <!--Menu Button-->
+            <button class="burger-btn" aria-label="menu open" aria-expanded="false" aria-controls="#menu-bar">
+                <i class="fa-solid fa-bars icon-open"></i>
+                <i class="fa-solid fa-x icon-close"></i>
+            </button>
+        </div>
+    </header>
+    <!--Side Bar Section-->
+    <nav id="menu-bar">
+        <div class="menu-bar-top">
+            <a href="./index.html" title="Home" aria-label="Home" class="nav-link">
+                <i class="fa-regular fa-house"></i>
+                <span class="nav-label hide-label">Home</span>
+            </a>
+            <a href="./projects.html" title="Projects" aria-label="Projects" class="nav-link">
+                <i class="fa-regular fa-folder"></i>
+                <span class="nav-label hide-label">Projects</span>
+            </a>
+            <a href="./about.html" title="About" aria-label="About" class="nav-link">
+                <i class="fa-regular fa-address-card"></i>
+                <span class="nav-label hide-label">About</span>
+            </a>
+            <a href="mailto:leocoding0326@icloud.com" title="Email Me" aria-label="Email Me" class="nav-link">
+                <i class="fa-regular fa-envelope"></i>
+                <span class="nav-label hide-label">Email Me</span>
+            </a>
+        </div>
+        <a class="primary-button button menu-button">Download Resume</a>
+        <div class="menu-bar-bot">
+            <div class="menu-bar-divider"></div>
+                <a href="https://www.linkedin.com/in/leonel-gonzalez-504a8837a/" title="Linkedin Profile"
+                    aria-label="Linkedin Profile" class="nav-link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/leocoding0326" title="GitHub Profile" aria-label="GitHub Profile"
+                    class="nav-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+        </div>
+    </nav>
+    <main>
+        <section id="main-section">
+
+        </section>
+    </main>
+
+<!--Zoomable Imgage Overlay-->
+    <div class="zoom-overlay">
+        <img class="zoomed-img" src="/media/pictures/headshot.png">
+    </div>
+<!--Java Script Link-->
+<script src="./app.js"></script>
+</body>
+
+</html>
