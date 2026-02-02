@@ -86,6 +86,21 @@
     background-color: rgb(0, 106, 255);
  }
 
+ .primary-button:active{
+    background-color: lightblue;
+ }
+ 
+ .secondary-button {
+    color: black;
+ }
+
+ .secondary-button:hover {
+    background-color: lightgray;
+ }
+ .secondary-button:active {
+    background-color: lightgray;
+ }
+
 a {
     text-decoration: none;
     display: inline-block;
