@@ -63,13 +63,14 @@
  }
 
  .button {
-    padding: 0.6rem;
+    padding: 0.5rem;
     border-radius: 10px;
     border: 1px solid lightgray;
     font-size: 1rem;
     transition: background-color 0.2s ease 0.2s, 
                 transform 0.4s ease;
     animation: raiseIn .35s ease-in;
+    width: 180px;
  }
 
  .button:hover{
@@ -85,6 +86,10 @@
     background-color: rgb(0, 106, 255);
  }
 
+a {
+    text-decoration: none;
+    display: inline-block;
+}
 
 /*Menu Bar Styles*/
 
@@ -337,13 +342,13 @@ header nav a:hover {
 }
 
 #hero-section h2 {
-    font-size: clamp(1.2rem, 4vw, 3rem);
+    font-size: clamp(1.8rem, 4vw, 3rem);
 }
 
 .hero-bullets {
     display: flex;
     list-style: none;
-    font-size: clamp(.5rem, 2vw, 1.5rem);
+    font-size: clamp(.6rem, 2vw, 1.5rem);
 }
 
 .hero-bullets li:not(:last-child)::after{
