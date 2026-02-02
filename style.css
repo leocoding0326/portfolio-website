@@ -363,6 +363,10 @@ header nav a:hover {
     align-items: start;
 }
 
+.project-card h4 {
+    color: gray;
+}
+
 
 
 @media (max-width: 1310px) {
