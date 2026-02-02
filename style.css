@@ -329,6 +329,17 @@ header nav a:hover {
     height: 1px;
 }
 
+/*---Featured Project Section Styling---*/
+
+#featured-projects {
+    background-color: rgb(237, 237, 237);
+    padding: 2rem;
+}
+
+.featured-grid {
+    
+}
+
 @media (max-width: 1310px) {
     .header-left {
         display: flex;
