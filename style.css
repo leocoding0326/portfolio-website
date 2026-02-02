@@ -433,6 +433,13 @@ header nav a:hover {
 
 
 
+.skills-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-items: center;
+    gap: 2rem;
+}
+
 @media (max-width: 1310px) {
     .header-left {
         display: flex;
