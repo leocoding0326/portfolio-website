@@ -396,6 +396,7 @@ header nav a:hover {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .project-links ul {
@@ -427,6 +428,10 @@ header nav a:hover {
     width: 80vw;
     margin-bottom: .5rem;
 }
+
+/*---Skills Section Styling---*/
+
+
 
 @media (max-width: 1310px) {
     .header-left {
