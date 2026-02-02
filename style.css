@@ -363,8 +363,9 @@ header nav a:hover {
     align-items: start;
 }
 
-.project-card h1 {
-    
+.project-card h3 {
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    padding-bottom: .5rem;
 }
 
 .project-card h4 {
@@ -457,8 +458,12 @@ header nav a:hover {
 
 @media (max-width: 500px) {
     .remove-smallsc {
-
         display: none;
+    }
+}
 
+@media (max-width: 310px) {
+    .skills-container span {
+        display: none;
     }
 }
