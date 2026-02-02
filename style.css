@@ -300,8 +300,7 @@ header nav a:hover {
     height: 40vh;
     padding: 2rem;
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 20px;
+    margin-top: 80px;
 }
 
 #hero-section h2 {
@@ -505,5 +504,8 @@ header nav a:hover {
 @media (max-width: 310px) {
     .skills-container {
         display: none;
+    }
+    #hero-section {
+        height: 55vh;
     }
 }
