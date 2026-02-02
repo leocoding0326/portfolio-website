@@ -431,13 +431,22 @@ header nav a:hover {
 
 /*---Skills Section Styling---*/
 
+#skills-section {
+    height: 30vh;
+    padding: 2rem;
+}
 
 
 .skills-card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-items: center;
     gap: 2rem;
+    height: 100%;
+}
+
+.skill-list {
+    display: flex;
 }
 
 @media (max-width: 1310px) {
