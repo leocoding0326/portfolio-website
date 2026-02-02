@@ -89,7 +89,7 @@
  .primary-button:active{
     background-color: lightblue;
  }
- 
+
  .secondary-button {
     color: black;
  }
@@ -371,6 +371,14 @@ header nav a:hover {
     margin: 0 10px;
     font-size: 1.2em;
     line-height: 1;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 
