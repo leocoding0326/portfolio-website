@@ -35,6 +35,7 @@
 
 main {
     margin-left: 3rem;
+    background-color: rgb(237, 237, 237);
 }
  * {
     box-sizing: border-box;
@@ -301,6 +302,7 @@ header nav a:hover {
     padding: 2rem;
     text-align: center;
     margin-top: 80px;
+    background-color: white;
 }
 
 #hero-section h2 {
@@ -339,7 +341,6 @@ header nav a:hover {
 /*---Featured Project Section Styling---*/
 
 #featured-projects {
-    background-color: rgb(237, 237, 237);
     padding: 2rem;
 }
 
@@ -432,21 +433,42 @@ header nav a:hover {
 /*---Skills Section Styling---*/
 
 #skills-section {
-    height: 30vh;
-    padding: 2rem;
+    height: 50vh;
+    padding: 0 2rem;
 }
 
 
 .skills-card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     place-items: center;
+    align-content: center;
     gap: 2rem;
-    height: 100%;
+    height: 80%;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: .5rem;
+    background-color: white;
+    min-width: 100%;
 }
 
 .skill-list {
     display: flex;
+}
+
+.skills:not(:last-child)::after {
+    content: '|';
+    margin: 0 10px;
+}
+
+.skills {
+    font-size: clamp(.6rem, 1vw, 1rem);
 }
 
 @media (max-width: 1310px) {
